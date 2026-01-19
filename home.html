@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HEXFIND Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="top-bar">
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  <div class="logo">HEXFIND</div>
+  <div class="icons" onclick="showNotification()">🔔</div>
+</header>
+
+<!-- DRAWER MENU -->
+<div id="drawerMenu" class="drawer-menu">
+  <span class="close-btn" onclick="toggleMenu()">✖</span>
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+  <a href="#" onclick="logout()">Logout</a>
+</div>
+
+<!-- BACK BUTTON -->
+<button class="back-btn" onclick="goBack()">← Back</button>
+
+<!-- HERO -->
+<section id="home" class="section hero">
+  <h1>Driving Innovation
+Delivering Solutions</h1>
+  <p>Technology • Digital • Automation</p>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+  <h2>About Us</h2>
+  <p>HEXFIND Solutions Pvt Ltd delivers digital transformation, automation, and smart technology solutions.</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="web-development.jpeg">
+      <h3>Web Development</h3>
+      <p>High-performance websites and web applications using modern technologies.</p>
+    </div>
+    <div class="card">
+      <img src="digital-marketing.jpeg">
+      <h3>Digital Marketing</h3>
+      <p>SEO, social media, paid ads, and branding strategies to boost visibility and growth.</p>
+    </div>
+    <div class="card">
+      <img src="home-automation.jpeg">
+      <h3>Home Automation</h3>
+      <p>Smart lighting, access control, and energy management solutions.</p>
+    </div>
+    <div class="card">
+      <img src="App Development.jpeg">
+      <h3>App Development</h3>
+      <p>Android & iOS apps with intuitive UI/UX and secure backend systems.</p>
+    </div>
+    <div class="card">
+      <img src="cctv.jpg">
+      <h3>CCTV & Security</h3>
+      <p>Professional surveillance systems for homes, offices, and industries.</p>
+    </div>
+    <div class="card">
+      <img src="MEP-Services.jpeg">
+      <h3>MEP & Interior</h3>
+      <p>MEP execution and interior solutions with quality-driven delivery.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section">
+  <h2>Gallery</h2>
+  <div class="gallery">
+   
+    <img src="3.avif" onclick="openImg(this)">
+    
+    <img src="5.avif" onclick="openImg(this)">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>📍 Palakkad, Kerala</p>
+  <p>📞 9746220148</p>
+  <p>📧 info@hexfind.com</p>
+</section>
+
+<!-- POPUP -->
+<div id="popup">
+  <span onclick="closeImg()">✖</span>
+  <img id="popupImg">
+</div>
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav">
+  <a href="#home">🏠<span>Home</span></a>
+  <a href="#services">🛠️<span>Services</span></a>
+  <a href="#gallery">🖼️<span>Gallery</span></a>
+  <a href="#contact">📞<span>Contact</span></a>
+  <a href="#" onclick="logout()">🚪<span>Logout</span></a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
